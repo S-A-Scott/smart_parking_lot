@@ -1,0 +1,8 @@
+#Common make definitions
+
+CC=arm-linux-gcc
+LDDIR=-L$(ROOT)/lib
+LDLIBS=$(LDDIR) -lspcsot
+CFLAGS=-I$(ROOT)/lib -Wall -g
+AR=arm-linux-ar
+LIBSPCSOT=$(ROOT)/lib/libspcsot.a
